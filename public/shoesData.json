@@ -1,0 +1,62 @@
+[
+    {
+      "id": "1",
+      "price": "$1,610",
+      "picture": "img/airland.png",
+      "name": "AIRLAND"
+    },
+    {
+      "id": "2",
+      "price": "$500",
+      "picture": "img/bonsar.png",
+      "name": "BONSAR"
+    },
+    {
+      "id": "3",
+      "price": "$1000",
+      "picture": "img/burton.png",
+      "name": "Burton"
+    },
+    {
+      "id": "4",
+      "price": "$1480",
+      "picture": "img/fila.png",
+      "name": "FILA"
+    },
+    {
+      "id": "5",
+      "price": "$2369",
+      "picture": "img/lee won.png",
+      "name": "lEE WON"
+    },
+    {
+      "id": "6",
+      "price": "$920",
+      "picture": "img/paragon.png",
+      "name": "PARAGON"
+    },
+    {
+      "id": "7",
+      "price": "$1524",
+      "picture": "img/puma.png",
+      "name": "PUMA"
+    },
+    {
+      "id": "8",
+      "price": "$128",
+      "picture": "img/saton.png",
+      "name": "SATON"
+    },
+    {
+      "id": "9",
+      "price": "$250",
+      "picture": "img/victory elite.png",
+      "name": "VICTORY ELITE"
+    },
+    {
+      "id": "10",
+      "price": "$3500",
+      "picture": "img/woodland.png",
+      "name": "WOODLAND"
+    }
+  ]
