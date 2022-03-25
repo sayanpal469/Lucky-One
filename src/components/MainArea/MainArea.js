@@ -8,7 +8,15 @@ const MainArea = () => {
 
     const addToCart = (product) => {
         const newCart = [...cart, product]
-        setCart(newCart)
+        if(newCart.length <= 4) {
+            setCart(newCart)
+        } else {
+            alert('More than 4')
+        }
+    }
+
+    const chooseAgain = () => {
+        setCart([])
     }
     useEffect( () => {
         fetch(`shoesData.json`)
@@ -24,7 +32,7 @@ const MainArea = () => {
             </div>
             <div className="col-lg-2 col-sm-12 selected-area">
                 {
-                    <Select cart={cart}></Select>
+                   <Select cart={cart} chooseAgain={chooseAgain}></Select>
                 }
             </div>
         </div>
