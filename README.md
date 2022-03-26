@@ -1,9 +1,9 @@
 # Getting Started with Create React App
 
 ## Project Name
-[Happy Heels]
-## Live Site Link
-(https://unique-griffin-773acb.netlify.app/)
+Happy Heels
+## Live Site Link 
+https://unique-griffin-773acb.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
