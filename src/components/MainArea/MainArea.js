@@ -12,8 +12,11 @@ const MainArea = () => {
         if(!check && newCart.length <=4){
             setCart(newCart)
         }
-        else{
-            alert('OOPS!! You Cant Add')
+        else if (check){
+            alert("OOPS!! You Can't Add")
+        }
+        else if(newCart.length > 4) {
+            alert("Can't add more than 4")
         }
     }
 
@@ -26,7 +29,7 @@ const MainArea = () => {
         .then(data => setProducts(data))
     },[])
     return (
-        <div className='row mt-5 p-5'>
+        <div className='row mt-5 p-5 main-container'>
             <div className="col-lg-10 product-area">
                     {
                     products.map(product => <Product key={product.id} productData={product} addToCart={addToCart}></Product>)
