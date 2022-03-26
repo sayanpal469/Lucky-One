@@ -8,10 +8,12 @@ const MainArea = () => {
 
     const addToCart = (product) => {
         const newCart = [...cart, product]
-        if(newCart.length <= 4) {
+        const check = cart.find(oldItem => oldItem.id === product.id)
+        if(!check && newCart.length <=4){
             setCart(newCart)
-        } else {
-            alert('More than 4')
+        }
+        else{
+            alert('OOPS!! You Cant Add')
         }
     }
 
@@ -26,11 +28,11 @@ const MainArea = () => {
     return (
         <div className='row mt-5 p-5'>
             <div className="col-lg-10 product-area">
-                {
+                    {
                     products.map(product => <Product key={product.id} productData={product} addToCart={addToCart}></Product>)
-                }
+                    }
             </div>
-            <div className="col-lg-2 col-sm-12 selected-area">
+            <div className="col-lg-2 selected-area">
                 {
                    <Select cart={cart} chooseAgain={chooseAgain}></Select>
                 }
