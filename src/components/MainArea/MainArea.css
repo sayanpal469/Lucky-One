@@ -1,9 +1,23 @@
+.main-container{
+    display: flex;
+}
+
 .product-area{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 @media screen and (max-width:768px) {
+    .main-container{
+        flex-direction: column-reverse;
+    }
+
+    .selected-area{
+        position: static;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
     .product-area{
         display: grid;
         grid-template-columns: repeat(1,1fr);
