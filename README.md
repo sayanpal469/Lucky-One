@@ -1,6 +1,11 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Happy Heels](https://github.com/facebook/create-react-app).
+### Project Name
+Happy Heels
+#### Live Site Link
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
