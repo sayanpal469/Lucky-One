@@ -21,7 +21,9 @@ const Select = ({cart, chooseAgain}) => {
                 cart.length && <button onClick={() => getRandom(cart)} className='btn btn-primary mt-5 mx-auto'>Choose 1 For Me</button>
             }
 
-            <button onClick={chooseAgain} className='btn btn-success mt-5'>Choose Again</button>
+            {
+                cart.length && <button onClick={chooseAgain} className='btn btn-success mt-5'>Choose Again</button>
+            }
         </div>
     );
 };
