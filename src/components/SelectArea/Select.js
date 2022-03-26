@@ -16,7 +16,7 @@ const Select = ({cart, chooseAgain}) => {
             {
                 cart.map(singelCart => <SingelItem key={singelCart.id} productName={singelCart.name} img={singelCart.picture}></SingelItem>)
             }
-                <p className='mt-4 text-center text-light bg-warning'>Your Chooses Item is {randomShoe.name}</p>
+                <p className='mt-4 text-center text-light bg-warning p-2'>Your Chooses Item is {randomShoe.name}</p>
             {
                 cart.length && <button onClick={() => getRandom(cart)} className='btn btn-primary mt-5 mx-auto'>Choose 1 For Me</button>
             }
